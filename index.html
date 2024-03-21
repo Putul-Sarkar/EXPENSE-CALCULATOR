@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSES</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       
+        <div class="calculator">
+
+            <h1 id="headline"> Expense Calculator</h1>
+            <label for="income">Income: </label>
+            <input type="number" id="income" required>
+
+<h3>Expenses</h3>
+<label for="food">Food</label>
+<input type="number" id="food" required><br><br>
+<label for="rent">Rent</label>
+<input type="number" id="rent" required><br><br>
+<label for="transport">Transport</label>
+<input type="number" id="transport" required>
+<button onclick="calculateExpenses()">Calculate</button>
+
+<h3>Total Expenses: <span id="totalExpenses"></span></h3>
+<h3>Balance: <span id="balance"></span></h3>
+
+<!--SAVING FROM BALANCE-->
+
+<h3>Saving</h3>
+<label for="savePercentage">Save (%): </label>
+<input type="number" id="savePercentage" placeholder="How many percentage you want to save?" required>
+<button onclick="calculateSaving()">Save</button>
+
+<h3>Saving Amount: <span id="savingAmount"></span></h3>
+<h3> Remaining Balance: <span id="remainingBalance"></span></h3>
+
+           
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
